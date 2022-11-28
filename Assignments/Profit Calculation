@@ -1,3 +1,4 @@
+# First Part
 sales = {
   "cost_value": 31.87,
   "sell_value": 45.00,
@@ -7,3 +8,8 @@ sales = {
 profit = (float(sales["sell_value"]) - float(sales["cost_value"])) * float(sales["inventory"])
 
 print(format(profit, "3.0f"))
+
+# Second Part 
+
+amount = input("Please enter the pay amount: ")
+print("$" + format(float(amount), ".2f"))
