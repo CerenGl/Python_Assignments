@@ -9,3 +9,14 @@ elif year % 100 == 0 and year % 400 == 0:
 
 else :
     print("{0} is NOT a leap year".format(year)) 
+    
+    
+#Another solution
+
+leap_year = int(input("please enter a year: "))
+
+first_sit = leap_year % 400
+second_sit = leap_year % 100
+
+
+print(bool(not first_sit or second_sit))
