@@ -1,0 +1,9 @@
+right_hand = {"y", "u", "ı", "o", "p", "h", "j", "k", "l", "n", "m"}
+left_hand = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "z", "x", "c", "v", "b"}
+
+word = set(input("Enter a word: "))
+
+comfortable_word = bool(word.intersection(right_hand - left_hand)) and bool(word.intersection(left_hand - right_hand))
+
+comfortable_word
+
